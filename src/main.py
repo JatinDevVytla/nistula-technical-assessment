@@ -18,14 +18,17 @@ from confidence import calculate_confidence
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s"
-) logger = logging.getLogger(__name__)
+) 
+
+logger = logging.getLogger(__name__)
 
 # App setup
 app = FastAPI(
     title="Nistula Guest Message Handler",
     description="Receives, normalises, and drafts replies to guest messages.",
     version="1.0.0"
-) app.add_middleware (
+) 
+app.add_middleware (
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["POST", "GET"],
