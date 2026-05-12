@@ -57,7 +57,8 @@ Draft a reply addressing the guest's message. Address the guest by first name ({
         "query_type": query_type,
         "has_booking_ref": booking_ref != "Not provided",
         "source": source,
-    }
+       }
+       
        return prompt, metadata
 
 async def get_ai_reply(normalised: dict) -> Tuple[str, dict]:
