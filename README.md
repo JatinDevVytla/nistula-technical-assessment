@@ -160,7 +160,9 @@ Each query type starts with a base score reflecting how answerable it typically 
 | 0.60 – 0.84       | agent_review  |
 | < 0.60            | escalate      |
 | Any complaint     | escalate      |
+
 Complaints always escalate regardless of score because they require human judgement on empathy, compensation, and resolution — things an AI should not decide alone.
+
 ---
 
 ## Error handling
