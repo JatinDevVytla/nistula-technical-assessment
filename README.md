@@ -134,10 +134,7 @@ The confidence score represents how reliably the system can handle a message wit
 
 ### How it is calculated
 
-**Step 1 — Base score by query type**:
-
-Each query type starts with a base score reflecting how answerable it typically is from structured property data:
-
+**Step 1 — Base score by query type**: Each query type starts with a base score reflecting how answerable it typically is from structured property data:
 | Query type               | Base score | Reasoning |
 |--------------------------|------------|-----------|
 | pre_sales_availability   | 0.90       | Factual — checked against property data |
