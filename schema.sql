@@ -11,23 +11,10 @@
 -- ENUMS
 
 -- Channels we receive messages from
-CREATE TYPE message_source AS ENUM (
-    'whatsapp',
-    'booking_com',
-    'airbnb',
-    'instagram',
-    'direct'
-);
+CREATE TYPE message_source AS ENUM ( 'whatsapp', 'booking_com', 'airbnb', 'instagram', 'direct' );
 
 -- Query categories (mirrors the classifier in src/classifier.py)
-CREATE TYPE query_type AS ENUM (
-    'pre_sales_availability',
-    'pre_sales_pricing',
-    'post_sales_checkin',
-    'special_request',
-    'complaint',
-    'general_enquiry'
-);
+CREATE TYPE query_type AS ENUM ( 'pre_sales_availability', 'pre_sales_pricing', 'post_sales_checkin', 'special_request', 'complaint', 'general_enquiry' );
 
 -- Where a message is in its lifecycle
 CREATE TYPE message_status AS ENUM (
